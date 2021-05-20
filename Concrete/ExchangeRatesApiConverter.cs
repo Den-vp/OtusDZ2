@@ -31,7 +31,7 @@ namespace Otus.CSharp.HW2.Concrete
             }
             else
             {
-                throw new ArgumentOutOfRangeException(nameof(currencyCode), $"Cannot get rate for currency {currencyCode}");
+                throw new ArgumentOutOfRangeException(nameof(currencyCode), $"Немогу получить курс для {currencyCode}");
             }
 
         }
@@ -44,7 +44,7 @@ namespace Otus.CSharp.HW2.Concrete
 
             if (!response.IsSuccessStatusCode)
             {
-                throw new Exception($"Cannot get rates. Status: {response.StatusCode}");
+                throw new Exception($"Немогу получить курс. Status: {response.StatusCode}");
             }
 
             var contentStr = await response.Content.ReadAsStringAsync();

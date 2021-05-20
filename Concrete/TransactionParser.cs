@@ -29,7 +29,7 @@ namespace Otus.CSharp.HW2.Concrete
             var wordsMinCount = typeCode == KeywordIncome ? 4 : 5;
             if (splits.Length < wordsMinCount)
             {
-                throw new ArgumentException(nameof(input), $"Wrong format. Should be {wordsMinCount} words in expression.");
+                throw new ArgumentException(nameof(input), $"Не верный формат. Должно состоять из {wordsMinCount} слов.");
             }
 
             var amount = decimal.Parse(splits[1], NumberStyles.Any, CultureInfo.InvariantCulture);

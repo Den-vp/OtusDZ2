@@ -29,7 +29,7 @@ namespace Otus.CSharp.HW2.Concrete
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Wrong input: {e.Message}");
+                Console.WriteLine($"Не верно указали строку: {e.Message}");
             }
 
         }
@@ -52,7 +52,7 @@ namespace Otus.CSharp.HW2.Concrete
 
             var totalBalanceAmount = amounts.Aggregate(totalCurrencyAmount, (t, a) => t += a);
 
-            Console.WriteLine($"Balance: {totalBalanceAmount}");
+            Console.WriteLine($"Баланс: {totalBalanceAmount}");
         }
 
         public void OutputBalanceInMainCurrencies()
