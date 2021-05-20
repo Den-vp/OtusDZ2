@@ -47,7 +47,7 @@ namespace Otus.CSharp.HW2
                 }
                 else if (key.KeyChar == '1')
                 {
-                    Console.WriteLine("Input new transaction1:");
+                    Console.WriteLine("Input new transaction:");
                     var input = Console.ReadLine();
 
                     budgetApp.AddTransaction(input);
